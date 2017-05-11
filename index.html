@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>russbiggs.com</title>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='manifest' href='/manifest.json'>
+    <meta name='theme-color' content='#2196f3'>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            text-align: center;
+        }
+        
+        h1 {
+            color: #1E1E1E;
+        }
+        
+        img.portrait {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .container {
+            text-align: center;
+            padding-top: 20px;
+        }
+        
+        hr {
+            border-top: 3px solid #8c8b8b;
+        }
+        
+        i {
+            font-size: 4em;
+        }
+    </style>
+</head>
+
+<body>
+    <link rel='stylesheet' href='css/material.min.css' />
+    <script defer src='js/material.min.js'></script>
+    <link rel='stylesheet' href='css/style.css'>
+    <div class='mdl-layout mdl-js-layout'>
+        <div class='mdl-grid'>
+            <div class='mdl-layout-spacer'></div>
+            <div class='mdl-cell mdl-cell--12-col mdl-cell--12-col-phone'>
+                <img src='img/russ.jpg' class='portrait img-responsive' alt='russ biggs portrait' />
+                <h1>Russ Biggs</h1>
+                <hr/>
+                <div>
+                    I am an application developer with SWCA Environment Consultants in Albuquerque, New Mexico.<br/> I primarily develop in Python, JavaScript and Java.<br> I also enjoy organizing community mapping events in Albuquerque via <a href='https://mapabq.org'>MAP|ABQ<a>
+                        <br>
+                        <br>
+                    <div>
+                        <a href='https://github.com/russbiggs'><i class='icon-github-square'></i></a>
+                    <a href='https://www.meetup.com/MAP-ABQ/'><i class='icon-meetup'></i></a>
+                    <a href='https://www.linkedin.com/in/russell-biggs-02238019'><i class='icon-linkedin-square' aria-hidden='true'></i></a>
+                </div>
+            </div>
+            <br>
+            <hr/>
+            <p id='title'>&copy; Russ Biggs 2017</p>
+            <br>
+        </div>
+        <div class='mdl-layout-spacer'></div>
+    </div>
+    </div>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('sw.js', {
+                    scope: './'
+                }).then(function(registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function(err) {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
+</body>
+
+</html>
