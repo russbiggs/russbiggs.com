@@ -1,18 +1,19 @@
 self.addEventListener('install', function(event) {
     event.waitUntil(
-        caches.open('russbiggs-static-v1').then(function(cache) {
-            console.log('site cached');
+        caches.open('russbiggs-static-v2').then(function(cache) {
+            console.log('service worker cache!!');
             return cache.addAll([
                 '/',
+                'https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic',
                 'css/style.css',
-                'css/material.min.css',
+                'css/milligram.min.css',
+                'css/normalize.min.css',
                 'css/fonts/icomoon.woff',
                 'css/fonts/icomoon.eot',
                 'css/fonts/icomoon.svg',
                 'css/fonts/icomoon.ttf',
                 'img/russ.jpg',
                 'index.html',
-                'js/material.min.js',
                 'favicon.ico'
             ]);
         })
