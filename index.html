@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang='en'>
+
 <head>
     <title>Russ Biggs</title>
     <meta charset='UTF-8'>
@@ -8,38 +9,38 @@
     <link rel='manifest' href='/manifest.json'>
     <meta name='theme-color' content='#0146b5'>
 </head>
-<body>
-<div class="container">
-    <div class="row">
-        <div class="column-60 column-offset-20 column column-main">
-            <img src='img/russ.jpg' alt='russ biggs portrait' />
-            <h1>Russ Biggs</h1>
-            <h4>Software Developer</h4>
-            <h6>web | mobile | geospatial</h6>
-            <p>
-            I currently work as a Software Developer for SWCA Environmental Consultants making software tools and applications for archaeology and environmental sciences. 
-            Previously, I've worked in research fields ranging from dendroclimatology, advertising, archaeology and humanitarian assistance. 
-            When I am not working, I also enjoy organizing community mapping events in Albuquerque via <a href='https://mapabq.org'>MAP|ABQ</a>
-        </p>
-        <h4>Recent projects/interests</h4>
-        <ul>
-            <li><a href="https://github.com/russbiggs/rwl">rwl</a> - JavaScript library for converting .rwl dendrochronology data to JSON</li>
-            <li><a href="https://github.com/russbiggs/limitatio">limitatio</a> - JavaScript library for calculating ancient Roman centuration</li>
-            <li>teaching myself <a href="https://github.com/russbiggs/openscad">OpenSCAD</a></li>
-            <li>contributing to <a href="https://www.openstreetmap.org/user/Russbiggs">OpenStreetMap</a></li>
-            <li>recycling plastic <a href="https://preciousplastic.com/">Precious Plastic </a></li>
-        </ul>
 
-        <br>
-            <a href='https://github.com/russbiggs' title="Russ Biggs github"><i class='icon-github-square'></i></a>
-            <a href='https://www.meetup.com/MAP-ABQ/' title="MAPABQ meetup page"><i class='icon-meetup'></i></a>
-            <a href='https://www.linkedin.com/in/russell-biggs-02238019' title="Russ Biggs linkedin"><i class='icon-linkedin-square' aria-hidden='true'></i></a>
-            <br>
-            <br>
-            <p>&copy; Russ Biggs 2018</p>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="column-60 column-offset-20 column column-main">
+                <img src='img/russ.jpg' alt='russ biggs portrait' />
+                <h1>Russ Biggs</h1>
+                <h4>Software Developer</h4>
+                <h6>web | mobile | geospatial</h6>
+                <p>
+                    I currently work as a Software Developer for SWCA Environmental Consultants making software tools and applications for archaeology and environmental sciences. Previously, I've worked in research fields ranging from dendroclimatology, advertising, archaeology
+                    and humanitarian assistance. When I am not working, I also enjoy organizing community mapping events in Albuquerque via <a href='https://mapabq.org'>MAP|ABQ</a>
+                </p>
+                <h4>Recent projects/interests</h4>
+                <ul>
+                    <li><a href="https://github.com/russbiggs/rwl">rwl</a> - JavaScript library for converting .rwl dendrochronology data to JSON</li>
+                    <li><a href="https://github.com/russbiggs/limitatio">limitatio</a> - JavaScript library for calculating ancient Roman centuration</li>
+                    <li>teaching myself <a href="https://github.com/russbiggs/openscad">OpenSCAD</a></li>
+                    <li>contributing to <a href="https://www.openstreetmap.org/user/Russbiggs">OpenStreetMap</a></li>
+                    <li>recycling plastic <a href="https://preciousplastic.com/">Precious Plastic </a></li>
+                </ul>
+
+                <br>
+                <a href='https://github.com/russbiggs' title="Russ Biggs github"><i class='icon-github-square'></i></a>
+                <a href='https://www.meetup.com/MAP-ABQ/' title="MAPABQ meetup page"><i class='icon-meetup'></i></a>
+                <a href='https://www.linkedin.com/in/russell-biggs-02238019' title="Russ Biggs linkedin"><i class='icon-linkedin-square' aria-hidden='true'></i></a>
+                <br>
+                <br>
+                <p>&copy; Russ Biggs 2018</p>
+            </div>
         </div>
     </div>
-</div>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
     <link rel="stylesheet" href="./css/normalize.min.css">
     <link rel="stylesheet" href="./css/milligram.min.css">
@@ -50,49 +51,36 @@
         }
         
         a {
-            color:#0146b5
+            color: #0146b5
         }
-
+        
         a:hover {
-            color:dodgerblue
+            color: dodgerblue
         }
-
+        
         i {
             font-size: 4em;
         }
-
+        
         img {
             max-width: 100%;
             display: block;
             margin: 0 auto;
             border-radius: 3px;
         }
-
+        
         .container {
             text-align: center;
-            padding-top:15px;
+            padding-top: 15px;
         }
-
+        
         @media (max-width: 40.0rem) {
             .row .column.column-60 {
-                margin:0;
+                margin: 0;
                 max-width: 100%;
             }
         }
     </style>
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-                navigator.serviceWorker.register('sw.js', {
-                    scope: './'
-                }).then(function(registration) {
-                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
-                }, function(err) {
-                    console.log('ServiceWorker registration failed: ', err);
-                });
-            });
-        }
-    </script>
 </body>
 
 </html>
