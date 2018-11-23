@@ -1,0 +1,15 @@
+script:
+  - mkdir -p build
+  - cp {index.html,favicon.ico,manifest.json} build/
+  - cp -R css build/css
+  - cp -R img build/img
+deploy:
+  provider: s3
+  access_key_id: AKIAJTC2GINCFCDKLV5A
+  secret_access_key:
+    secure: DhkwEAUUuPi9bB1OXDMUfPVaJtXU1ydhMeGD4jiT5nOBjTboFKEXvFH6GpJ3Ogw7w29deUXazVPqaFL9mE9WMPAPIUUrnr/GllYiVctLes2KnNdRysZN384JnDmnB3/3MW4vJSOgmQbjA5M8TKHNlGW4LuMnkHp9LOOcXUV9bjitE++QoOFvh1RspIMaKLpAt/d8lRQZyFMKZa9CPINrp9rrACDY58Ay5U7jMp8TPXdOCDlIAHl95n3jJ4N4IzRoxPe7W91Lng11SpbOpp6T8x6AU2zzu1/2p38fQPzeAAzEByJojQlw/t6KalwXuRFEBr7qVj1HxCNFj1hhnd2woZ3oEZg6QAuiAhkZENGVRjsYLh6KDU/alf72xz2Ypytclpy2jOPSm8FxxyMOvYkC42aj1DTCAOtWIWwOkwzHAz0TjtP0n3vvsis0RGvx9XJnCyhqTAlzx60SwdS3m5qH/lBDkP34Wdnkgk5L4gQJWiLSGNxoYFE6y45H/shciY66MVmL406xWg9RKkoSaoRcBKBphEkmfBuKJexUITY2qHsGZSbb+FA9fxCeSk9I7mZ0wyizDcQHQ5LuTSPJ885gIlMPef/rFiyrn73so2hcwzlRu0/RTRnqZzxdaddUzV8JdM2wjbmcazMqpqIbDGQm1kjAFCsoFuziYm2WcTr5h7c=
+  bucket: russbiggs.com
+  local_dir: build
+  acl: public_read
+  on:
+    repo: russbiggs/russbiggs
