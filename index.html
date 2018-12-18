@@ -1,34 +1,47 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 
 <head>
     <title>Russ Biggs</title>
-    <meta charset='UTF-8'>
+    <meta charset="UTF-8">
     <meta name="Description" content="Russ Biggs personal homepage">
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='manifest' href='/manifest.json'>
-    <meta name='theme-color' content='#0146b5'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0146b5">
     <script>
         window.dataLayer = window.dataLayer || [];
 
         function gtag() {
             dataLayer.push(arguments);
         }
-        gtag('js', new Date());
+        gtag("js", new Date());
 
-        gtag('config', 'UA-75138441-1');
+        gtag("config", "UA-75138441-1");
     </script>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
-    <link rel="stylesheet" href="./css/normalize.min.css">
-    <link rel="stylesheet" href="./css/milligram.min.css">
-    <link rel='stylesheet' href='css/style.css'>
+    <link rel="stylesheet" href="css/style.css">
     <style>
+        body {
+            font-family: "Roboto", sans-serif;
+            color: #606c76;
+            line-height: 1.6;
+        }
+        
         ul {
+            list-style: circle inside;
             text-align: left;
+        }
+        
+        li {
+            margin-bottom: 1rem;
         }
         
         a {
             color: #0146b5
+        }
+        
+        p {
+            margin-bottom: 2.5rem;
         }
         
         a:hover {
@@ -39,6 +52,17 @@
             font-size: 4em;
         }
         
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-weight: 300;
+        }
+        
+        h1 {
+            font-size: 3rem;
+        }
+        
         img {
             max-width: 100%;
             display: block;
@@ -47,14 +71,25 @@
         }
         
         .container {
-            text-align: center;
+            display: flex;
+            justify-content: center;
             padding-top: 15px;
+            flex-direction: column;
+        }
+        
+        .content {
+            text-align: center;
+            margin-left: 25%;
+            width: 50%;
         }
         
         @media (max-width: 40.0rem) {
-            .row .column.column-60 {
-                margin: 0;
-                max-width: 100%;
+            .content {
+                margin-left: 5%;
+                width: 90%;
+            }
+            ul {
+                padding-left: 5%;
             }
         }
     </style>
@@ -62,32 +97,28 @@
 
 <body>
     <div class="container">
-        <div class="row">
-            <div class="column-60 column-offset-20 column column-main">
-                <img src='img/russ.jpg' alt='russ biggs portrait' />
-                <h1>Russ Biggs</h1>
-                <h4>Software Developer</h4>
-                <h6>web | mobile | geospatial</h6>
-                <p>
-                    I am a software developer based in Albuquerque New Mexico. I've worked in a variety of fields ranging from dendroclimatology, advertising, archaeology and humanitarian assistance. When I am not working, I also enjoy obsessing over my garden, tinkering
-                    in 3D Printing and CNC, and organizing community mapping events in Albuquerque via <a href='https://mapabq.org'>MAP|ABQ</a>
-                </p>
-                <h4>Recent projects/interests</h4>
-                <ul>
-                    <li>The Great OSM building import for <a href="https://github.com/mapabq/abqbuildings">Albuquerque</a></li>
-                    <li><a href="https://github.com/russbiggs/rwl">rwl</a> - JavaScript library for converting .rwl dendrochronology data to JSON</li>
-                    <li><a href="https://github.com/russbiggs/limitatio">limitatio</a> - JavaScript library for calculating ancient Roman centuration</li>
-                    <li>recycling plastic <a href="https://preciousplastic.com/">Precious Plastic </a></li>
-                </ul>
-
-                <br>
-                <a href='https://github.com/russbiggs' title="Russ Biggs github"><i class='icon-github-square'></i></a>
-                <a href='https://www.meetup.com/MAP-ABQ/' title="MAPABQ meetup page"><i class='icon-meetup'></i></a>
-                <a href='https://www.linkedin.com/in/russell-biggs-02238019' title="Russ Biggs linkedin"><i class='icon-linkedin-square' aria-hidden='true'></i></a>
-                <br>
-                <br>
-                <p>&copy; Russ Biggs 2018</p>
-            </div>
+        <div class="content">
+            <img src="img/russ.jpg" alt="russ biggs portrait" />
+            <h1>Russ Biggs</h1>
+            <h2>Software Developer</h2>
+            <h4>web | mobile | geospatial</h4>
+            <p>
+                I am a software developer based in Albuquerque New Mexico. I have worked in a variety of fields ranging from dendroclimatology, advertising, archaeology and humanitarian assistance. When I am not working, I also enjoy obsessing over my garden, tinkering
+                in 3D Printing and CNC, and organizing community mapping events in Albuquerque via <a href="https://mapabq.org">MAP|ABQ</a>
+            </p>
+            <h2>Recent projects/interests</h2>
+            <ul>
+                <li>The Great OSM building import for <a href="https://github.com/mapabq/abqbuildings">Albuquerque</a></li>
+                <li><a href="https://github.com/russbiggs/rwl">rwl</a> - JavaScript library for converting .rwl dendrochronology data to JSON</li>
+                <li><a href="https://github.com/russbiggs/limitatio">limitatio</a> - JavaScript library for calculating ancient Roman centuration</li>
+                <li>recycling plastic <a href="https://preciousplastic.com/">Precious Plastic </a></li>
+            </ul>
+            <br>
+            <a href="https://github.com/russbiggs" title="Russ Biggs github"><i class="icon-github-square"></i></a>
+            <a href="https://www.linkedin.com/in/russell-biggs-02238019" title="Russ Biggs linkedin"><i class="icon-linkedin-square" aria-hidden="true"></i></a>
+            <br>
+            <br>
+            <p>&copy; Russ Biggs 2018</p>
         </div>
     </div>
 </body>
