@@ -1,7 +1,6 @@
 script:
   - mkdir -p build
-  - cp {index.html,favicon.ico,manifest.json} build/
-  - cp -R css build/css
+  - cp {index.html,favicon.ico,manifest.json, github.svg, linkedin.svg, twitter.svg} build/
   - cp -R img build/img
 deploy:
   provider: s3
